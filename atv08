@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mesclandoArraysRemovendoDuplicatas</title>
+</head>
+<body>
+    <script>
+        function mesclarEremoverDuplicatas (array1,array2){
+            let mesclado = array1.concat(array2);
+            return [...new Set(mesclado)];
+        }
+
+        let array1 = [1,2,3];
+        let array2 = [1,3,4,5];
+        let resultado = mesclarEremoverDuplicatas(array1, array2);
+        console.log(resultado);
+    </script>
+</body>
+</html>
