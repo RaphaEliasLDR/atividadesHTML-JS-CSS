@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validandoItensDentroDoArrays</title>
+</head>
+<body>
+    <script>
+        function contemElemento(array, elemento){
+            return array.includes(elemento);
+        }
+
+        let frutas = ['maçã','banana','laranja'];
+        console.log(contemElemento (frutas,'banana'));
+        console.log(contemElemento (frutas,'uva'));
+    </script>
+</body>
+</html>
