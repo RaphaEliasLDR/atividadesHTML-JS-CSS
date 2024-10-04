@@ -1,0 +1,16 @@
+class Carro{
+    constructor(marca, modelo){
+        this.marca = marca;
+        this.modelo = modelo;
+    }
+
+    descrever(){
+        return `Este carro é um ${this.marca} ${this.modelo}`;
+    }
+
+}
+
+const meuCarro1 = new Carro ("Caminhão", "de 4 rodas");
+const meuCarro = new Carro ("Toyota", "Corolla");
+console.log(meuCarro.descrever());
+console.log(meuCarro1.descrever());
