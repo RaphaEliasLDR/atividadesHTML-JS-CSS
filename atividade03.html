@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Parágrafo</title>
+</head>
+<body>
+
+    <p id="paragrafo">Este é o parágrafo original.</p>
+    <button id="alterarParagrafo">Alterar Parágrafo</button>
+
+    <script>
+        const paragrafo = document.getElementById('paragrafo');
+        const botao = document.getElementById('alterarParagrafo');
+
+        botao.addEventListener('click', function() {
+            paragrafo.textContent = 'O parágrafo foi alterado!';
+        });
+    </script>
+
+</body>
+</html>

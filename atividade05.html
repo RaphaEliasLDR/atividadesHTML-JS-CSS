@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mensagem">A mesagem aparecerá aqui.</div>
+    <button id="mostarMensagem"> Mostrar Mensagem </button>
+
+    <script>
+
+        const mensagem = document.getElementById('mensagem');
+        const botao = document.getElementById('mostrarMensagem');
+
+        botao.addEventListener('click',function(){
+            setTimeout(function(){
+            mensagem.textContent = 'Mensagem exibida após 3 segundos!';},3000);  
+        });
+        
+    </script>
+</body>
+</html>
